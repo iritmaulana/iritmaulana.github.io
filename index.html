@@ -7,1008 +7,571 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Irit Maulana's Portfolio</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Irit Maulana" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Irit Maulana</h1>
-
-          <p class="title">Software Engineer || Web developer </p>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <!-- Profile Section -->
+        <div class="profile">
+          <figure class="avatar">
+            <img src="./assets/images/my-avatar.png" alt="Irit Maulana" loading="lazy">
+          </figure>
+          
+          <h1 class="profile-name">Irit Maulana</h1>
+          <p class="profile-title">Software Engineer || Web Developer</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
+        <!-- Contact Information -->
+        <ul class="contact-list">
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
+            <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
             <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:iritmaulana@gmail.com" class="contact-link">iritmaulana@gmail.com</a>
+              <h6>Email</h6>
+              <a href="mailto:iritmaulana@gmail.com">iritmaulana@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
+            <ion-icon name="call-outline" class="contact-icon"></ion-icon>
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+6281276307723" class="contact-link">+6281276307723</a>
+              <h6>Phone</h6>
+              <a href="tel:+6281276307723">+62 812 7630 7723</a>
             </div>
-
           </li>
-
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
+            <ion-icon name="location-outline" class="contact-icon"></ion-icon>
             <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Jakarta, Indonesia</address>
+              <h6>Location</h6>
+              <p>Jakarta, Indonesia</p>
             </div>
-
           </li>
-
         </ul>
 
-        <div class="separator"></div>
-
+        <!-- Social Links -->
         <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+          <li>
+            <a href="https://github.com/iritmaulana" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+          <li>
+            <a href="https://linkedin.com/in/iritmaulana" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+          <li>
+            <a href="https://medium.com/@iritmaulana" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-medium"></ion-icon>
             </a>
           </li>
-
         </ul>
-
       </div>
-
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- Main Content -->
     <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- Navigation -->
       <nav class="navbar">
-
         <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li> -->
-
+          <li><button class="navbar-link active" data-nav-link>About</button></li>
+          <li><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li><button class="navbar-link" data-nav-link>Blog</button></li>
         </ul>
-
       </nav>
 
+      <!-- About Section -->
+      <article class="content-section active" data-page="about">
+        <h2 class="section-title">About me</h2>
 
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
+        <div class="card">
           <p>
-            I build modern web applications using Laravel, React, and AI integration, focusing on clean, maintainable code and robust testing. 
+            I build modern web applications using Laravel, React, and AI integration, focusing on clean, maintainable code and robust testing.
           </p>
-
           <p>
-            My solutions deliver intuitive user experiences, scalability, and efficient performance. Whether developing dynamic apps, integrating AI, or driving innovation, I'm ready to turn your ideas into impactful solutions. Let's create something powerful together
+            My solutions deliver intuitive user experiences, scalability, and efficient performance. Whether developing dynamic apps, integrating AI, or driving innovation, I'm ready to turn your ideas into impactful solutions. Let's create something powerful together.
           </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  Building modern, responsive, and user-friendly websites tailored to your needs.
-                </p>
-              </div>
-
-            </li>
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-payment-integration.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Payment Integration</h4>
-
-                <p class="service-item-text">
-                  Seamlessly integrating secure and efficient payment gateways for your online platforms.
-                </p>
-              </div>
-
-            </li>
-
-            
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-ai-integration.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Integration</h4>
-
-                <p class="service-item-text">
-                  Enhancing your digital solutions with advanced AI technologies for smarter automation and personalization.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-wordpress-solutions.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">WordPress Solutions</h4>
-
-                <p class="service-item-text">
-                  Designing, customizing, and maintaining WordPress websites with optimized performance.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-
-        <!--
-          - testimonials modal
-        -->
-
-       <!--  <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
         </div>
- -->
 
-        <!--
-          - clients
-        -->
-
-       <!--  <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-           
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-      
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineer - PT GLOBAL ZERONE DIGITAL</h4>
-              <span>July 2024 — Present</span>
-              <p class="timeline-text">
-                Developed and optimized backend features using Laravel 11 and Inertia.js.
-                Designed database structures and integrated applications with LLM APIs for AI-driven solutions.
-                Assisted frontend developers with React for minor UI/UX enhancements.
-                Managed DevOps tasks, including CI/CD automation using GitHub Actions and deployment on DigitalOcean.
-              </p>
-              <p class="timeline-text">
-                <strong>Key Projects:</strong>
-                <strong><a href="https://writingaide.co.uk" target="_blank" style="color: #f5b700; text-decoration: none;">WritingAide.co.uk – AI-powered writing assessment platform</a></strong>
-                Developed backend features using Laravel 11 and Inertia.js. Designed and optimized database architecture for writing assessment and feedback processing. Integrated LLM API to provide real-time writing analysis, suggestions, and scoring. Assisted in frontend enhancements using React to improve user experience. Implemented DevOps pipelines using GitHub Actions and deployed the application on DigitalOcean.
-                
-                <strong><a href="https://venti.id" target="_blank" style="color: #f5b700; text-decoration: none;">Venti.id – Event Management Platform</a></strong>
-                Integrated Venti.id with Latihan.id (exam platform) to enable seamless user authentication and data synchronization. Worked as a full-stack developer, modifying and expanding existing features using Node.js and Next.js. Connected Venti.id users to Latihan.id via SSO authentication. Developed a user dashboard displaying exam details, competition names, dates, scores, and certificates, fetching data via Knex.js API. Automated certificate generation from Latihan.id (built with Laravel 5.6) and made them accessible through Venti.id's API.
-              </p>
-            </li>
-      
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">ICT Teacher - KESATUAN BANGSA SCHOOL</h4>
-              <span>July 2021 — June 2024</span>
-              <p class="timeline-text">
-                Taught Arduino programming to senior high school students and Microbit to junior high school students.
-                Mentored the Robotics Club, leading students to win 3 national competitions.
-                Supervised STEAM Lab operations, including 3D printing and CNC machining.
-              </p>
-            </li>
-      
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">ICT Teacher - SEMESTA BILINGUAL SCHOOL</h4>
-              <span>Sept 2019 — June 2021</span>
-              <p class="timeline-text">
-                Taught Scratch programming for grades 4-6 and Python for grade 7.
-                Introduced fundamental programming concepts, improving student performance by 90% in annual assessments.
-              </p>
-            </li>
-            
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineer - PT JEMBATAN SIMPATI</h4>
-              <span>Nov 2016 — Apr 2017</span>
-              <p class="timeline-text">
-                Designed and developed web applications using Laravel, increasing operational efficiency by 25%.
-                Ensured application security and scalability through continuous monitoring and updates.
-              </p>
-            </li>
-          </ol>
-        </section>
-      
-        <section class="skill">
-          <h3 class="h3 skills-title">Technical Skills</h3>
-      
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Backend Development (PHP/Laravel)</h5>
-                <data value="90">90%</data>
+        <!-- Services -->
+        <section class="services">
+          <h3 class="text-gradient">What I'm doing</h3>
+          
+          <div class="services-grid">
+            <div class="card service-card">
+              <div class="service-icon">
+                <img src="./assets/images/icon-dev.svg" alt="Web development" width="40">
               </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+              <div class="service-content">
+                <h4>Web Development</h4>
+                <p>Building modern, responsive, and user-friendly websites tailored to your needs.</p>
               </div>
-            </li>
-      
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Frontend (React/JavaScript)</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-      
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">DevOps & Deployment</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-      
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Educational Technology</h5>
-                <data value="95">95%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <br>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-      
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Institut Teknologi Sepuluh Nopember</h4>
-              <span>2017 — 2019</span>
-              <p class="timeline-text">
-                Master of Informatics with research focus on AI Integration in Web Applications. 
-                Successfully completed advanced coursework in software engineering and artificial intelligence.
-              </p>
-            </li>
-      
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Ege University</h4>
-              <span>2012 — 2016</span>
-              <p class="timeline-text">
-                Bachelor of Computer Engineering with focus on Software Engineering and Computer Systems.
-                Completed comprehensive studies in programming, algorithms, and system design.
-              </p>
-            </li>
-          </ol>
-        </section>
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio active" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>AI Integration</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Wordpress</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Authentication</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Information Systems</button>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="project-list">
-             <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://venti.id">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/venti.png" alt="Web Development" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">venti.id - Event Management Platform</h3>
-                <p class="project-category">Web Development</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="ai integration">
-              <a href="https://writingaide.co.uk/">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/writingaide.png" alt="AI Integration" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">AI Writing Companion - WritingAide.co.uk</h3>
-                <p class="project-category">AI Integration</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="ai integration">
-              <a href="https://github.com/iritmaulana/ai-content-detector">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/AI-Content-Detection.png" alt="AI Integration" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">AI Content Detector: Detecting AI-Generated Text in a Paragraph</h3>
-                <p class="project-category">AI Integration</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="ai integration">
-              <a href="https://github.com/iritmaulana/content-assistant">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/Content-Assistant.jpg" alt="AI Integration" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Content Assistant: Multi-LLM with Laravel 11 & Deepseek</h3>
-                <p class="project-category">AI Integration</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/iritmaulana/laravel-xendit">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/Payment-Integration.jpg" alt="Payment Gateway Integration" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Laravel E-commerce Payment Integration with Xendit</h3>
-                <p class="project-category">Payment Gateway Integration</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/iritmaulana/exchangeItem">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/Google-Auth.jpg" alt="Google Authentication System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Build Google Authentication System with Laravel & React</h3>
-                <p class="project-category">Robust Authentication</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/iritmaulana/oceansystem">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/Ocean-System.jpg" alt="Ocean System" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ocean System : Comprehensive Information System</h3>
-                <p class="project-category">Information System</p>
-              </a>
-            </li>
-
-             <li class="project-item active" data-filter-item data-category="wordpress">
-              <a href="https://yayasanrubic.org">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/projects/Wordpress-RUBIC.jpg" alt="wordpress solution" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Official Website: RUBIC Foundation</h3>
-                <p class="project-category">Wordpress</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-      
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="https://medium.com/@iritmaulana/building-a-robust-ai-content-detection-application-a-comprehensive-laravel-tutorial-1280a5872acf">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_u99C_vqmNbzVAYfN3HeMQ.png" 
-                       alt="AI Content Detection" 
-                       loading="lazy">
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">AI Integration</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-12-21">Mar 28, 2025</time>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">Building a Robust AI Content Detection Application: A Comprehensive Laravel Tutorial</h3>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="https://medium.com/@iritmaulana/supercharging-content-generation-building-a-multi-llm-integration-with-laravel-11-and-deepseek-03be04b492a9">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*qVpnQ1cJZznBYSUnSZ_qVg.png" 
-                       alt="Content Assistant" 
-                       loading="lazy">
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">AI Integration</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-12-21">Jan 29, 2025</time>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">Supercharging Content Generation: Building a Multi-LLM Integration with Laravel 11 and Deepseek</h3>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="https://medium.com/@iritmaulana/building-a-robust-authentication-system-in-laravel-with-breeze-social-login-and-otp-71d554518ccf">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*RX6DNdzu6Ug7biLahFiSPw.jpeg" 
-                       alt="Building a Robust Authentication System in Laravel" 
-                       loading="lazy">
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Laravel</p>
-                    <span class="dot"></span>
-                    <time datetime="2025-01-09">Jan 09, 2025</time>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">Building a Robust Authentication System in Laravel with Breeze, Social Login, and OTP</h3>
-                </div>
-              </a>
-            </li>
-      
-            <li class="blog-post-item">
-              <a href="https://medium.com/@iritmaulana/master-ielts-writing-in-2024-the-ultimate-guide-that-actually-works-7e9f5abfd4ba">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*QLxd7McZ7kJyJzKP" 
-                       alt="Master IELTS Writing Guide" 
-                       loading="lazy">
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Education</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-12-29">Dec 29, 2024</time>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">Master IELTS Writing in 2025: The Ultimate Guide That Actually Works</h3>
-                </div>
-              </a>
-            </li>
-      
-            <li class="blog-post-item">
-              <a href="https://medium.com/@iritmaulana/implementing-google-socialite-in-laravel-11-a-complete-guide-0c38bb37872e">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*FV5ukU2FIeyjGvV2" 
-                       alt="Implementing Google Socialite in Laravel 11" 
-                       loading="lazy">
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Laravel</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-12-24">Dec 24, 2024</time>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">Implementing Google Socialite in Laravel 11: A Complete Guide</h3>
-                </div>
-              </a>
-            </li>
-      
-            <li class="blog-post-item">
-              <a href="https://medium.com/@iritmaulana/xendit-payment-gateway-integration-with-laravel-11-a-complete-guide-4614c9687005">
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LBzDWlXlnuuGr-q_jASvkg.jpeg" 
-                       alt="Xendit Payment Gateway Integration with Laravel 11" 
-                       loading="lazy">
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Laravel</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-12-21">Dec 21, 2024</time>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">Xendit Payment Gateway Integration with Laravel 11: A Complete Guide</h3>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="card service-card">
+              <div class="service-icon">
+                <img src="./assets/images/icon-payment-integration.svg" alt="Payment integration" width="40">
+              </div>
+              <div class="service-content">
+                <h4>Payment Integration</h4>
+                <p>Seamlessly integrating secure and efficient payment gateways for your online platforms.</p>
+              </div>
+            </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+            <div class="card service-card">
+              <div class="service-icon">
+                <img src="./assets/images/icon-ai-integration.svg" alt="AI integration" width="40">
+              </div>
+              <div class="service-content">
+                <h4>AI Integration</h4>
+                <p>Enhancing your digital solutions with advanced AI technologies for smarter automation and personalization.</p>
+              </div>
+            </div>
 
-          </form>
-
+            <div class="card service-card">
+              <div class="service-icon">
+                <img src="./assets/images/icon-wordpress-solutions.svg" alt="WordPress solutions" width="40">
+              </div>
+              <div class="service-content">
+                <h4>WordPress Solutions</h4>
+                <p>Designing, customizing, and maintaining WordPress websites with optimized performance.</p>
+              </div>
+            </div>
+          </div>
         </section>
-
       </article>
 
+      <!-- Resume Section -->
+      <article class="content-section" data-page="resume">
+        <h2 class="section-title">Resume</h2>
+
+        <!-- Experience -->
+        <section class="timeline-section">
+          <div class="timeline-header">
+            <div class="timeline-icon">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="text-gradient">Experience</h3>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item card">
+              <div class="timeline-content">
+                <h4>Software Engineer</h4>
+                <h5>PT GLOBAL ZERONE DIGITAL</h5>
+                <span class="timeline-date">July 2024 — Present</span>
+                <p>
+                  Developed and optimized backend features using Laravel 11 and Inertia.js.
+                  Designed database structures and integrated applications with LLM APIs for AI-driven solutions.
+                  Assisted frontend developers with React for minor UI/UX enhancements.
+                  Managed DevOps tasks, including CI/CD automation using GitHub Actions and deployment on DigitalOcean.
+                </p>
+                <div class="project-highlights">
+                  <h6>Key Projects:</h6>
+                  <ul>
+                    <li>
+                      <strong><a href="https://writingaide.co.uk" target="_blank">WritingAide.co.uk</a></strong> - AI-powered writing assessment platform
+                    </li>
+                    <li>
+                      <strong><a href="https://venti.id" target="_blank">Venti.id</a></strong> - Event Management Platform
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item card">
+              <div class="timeline-content">
+                <h4>ICT Teacher</h4>
+                <h5>KESATUAN BANGSA SCHOOL</h5>
+                <span class="timeline-date">July 2021 — June 2024</span>
+                <p>
+                  Taught Arduino programming to senior high school students and Microbit to junior high school students.
+                  Mentored the Robotics Club, leading students to win 3 national competitions.
+                  Supervised STEAM Lab operations, including 3D printing and CNC machining.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item card">
+              <div class="timeline-content">
+                <h4>ICT Teacher</h4>
+                <h5>SEMESTA BILINGUAL SCHOOL</h5>
+                <span class="timeline-date">Sept 2019 — June 2021</span>
+                <p>
+                  Taught Scratch programming for grades 4-6 and Python for grade 7.
+                  Introduced fundamental programming concepts, improving student performance by 90% in annual assessments.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item card">
+              <div class="timeline-content">
+                <h4>Software Engineer</h4>
+                <h5>PT JEMBATAN SIMPATI</h5>
+                <span class="timeline-date">Nov 2016 — Apr 2017</span>
+                <p>
+                  Designed and developed web applications using Laravel, increasing operational efficiency by 25%.
+                  Ensured application security and scalability through continuous monitoring and updates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-section">
+          <h3 class="text-gradient">Technical Skills</h3>
+          
+          <div class="skills-grid">
+            <div class="skill-item card">
+              <div class="skill-header">
+                <h5>Backend Development (PHP/Laravel)</h5>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item card">
+              <div class="skill-header">
+                <h5>Frontend (React/JavaScript)</h5>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item card">
+              <div class="skill-header">
+                <h5>DevOps & Deployment</h5>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item card">
+              <div class="skill-header">
+                <h5>Educational Technology</h5>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="timeline-section">
+          <div class="timeline-header">
+            <div class="timeline-icon">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 class="text-gradient">Education</h3>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item card">
+              <div class="timeline-content">
+                <h4>Master of Informatics</h4>
+                <h5>Institut Teknologi Sepuluh Nopember</h5>
+                <span class="timeline-date">2017 — 2019</span>
+                <p>
+                  Research focus on AI Integration in Web Applications. 
+                  Successfully completed advanced coursework in software engineering and artificial intelligence.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item card">
+              <div class="timeline-content">
+                <h4>Bachelor of Computer Engineering</h4>
+                <h5>Ege University</h5>
+                <span class="timeline-date">2012 — 2016</span>
+                <p>
+                  Focus on Software Engineering and Computer Systems.
+                  Completed comprehensive studies in programming, algorithms, and system design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Portfolio Section -->
+      <article class="content-section" data-page="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+          <button class="btn btn-secondary active" data-filter="all">All</button>
+          <button class="btn btn-secondary" data-filter="web-development">Web Development</button>
+          <button class="btn btn-secondary" data-filter="ai-integration">AI Integration</button>
+          <button class="btn btn-secondary" data-filter="wordpress">WordPress</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <div class="project-card card" data-category="web-development">
+            <div class="project-image">
+              <img src="assets/images/projects/venti.png" alt="Venti.id" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://venti.id" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>venti.id - Event Management Platform</h4>
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="project-card card" data-category="ai-integration">
+            <div class="project-image">
+              <img src="assets/images/projects/writingaide.png" alt="WritingAide" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://writingaide.co.uk/" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>AI Writing Companion - WritingAide.co.uk</h4>
+              <p>AI Integration</p>
+            </div>
+          </div>
+
+          <div class="project-card card" data-category="ai-integration">
+            <div class="project-image">
+              <img src="assets/images/projects/AI-Content-Detection.png" alt="AI Content Detector" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/iritmaulana/ai-content-detector" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>AI Content Detector</h4>
+              <p>AI Integration</p>
+            </div>
+          </div>
+
+          <div class="project-card card" data-category="ai-integration">
+            <div class="project-image">
+              <img src="assets/images/projects/Content-Assistant.jpg" alt="Content Assistant" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/iritmaulana/content-assistant" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Content Assistant: Multi-LLM with Laravel 11</h4>
+              <p>AI Integration</p>
+            </div>
+          </div>
+
+          <div class="project-card card" data-category="web-development">
+            <div class="project-image">
+              <img src="assets/images/projects/Payment-Integration.jpg" alt="Payment Integration" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/iritmaulana/laravel-xendit" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Laravel E-commerce Payment Integration</h4>
+              <p>Payment Gateway Integration</p>
+            </div>
+          </div>
+
+          <div class="project-card card" data-category="web-development">
+            <div class="project-image">
+              <img src="assets/images/projects/Google-Auth.jpg" alt="Google Authentication" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/iritmaulana/exchangeItem" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Google Authentication System</h4>
+              <p>Robust Authentication</p>
+            </div>
+          </div>
+
+          <div class="project-card card" data-category="web-development">
+            <div class="project-image">
+              <img src="assets/images/projects/Ocean-System.jpg" alt="Ocean System" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/iritmaulana/oceansystem" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Ocean System: Comprehensive Information System</h4>
+              <p>Information System</p>
+            </div>
+          </div>
+
+          <div class="project-card card" data-category="wordpress">
+            <div class="project-image">
+              <img src="assets/images/projects/Wordpress-RUBIC.jpg" alt="RUBIC Foundation" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://yayasanrubic.org" target="_blank" class="btn btn-primary">
+                  <ion-icon name="open-outline"></ion-icon>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4>Official Website: RUBIC Foundation</h4>
+              <p>WordPress</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Section -->
+      <article class="content-section" data-page="blog">
+        <h2 class="section-title">Blog</h2>
+
+        <div class="blog-grid">
+          <article class="blog-card card">
+            <div class="blog-image">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_u99C_vqmNbzVAYfN3HeMQ.png" 
+                   alt="AI Content Detection" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">AI Integration</span>
+                <time datetime="2024-12-21">Mar 28, 2025</time>
+              </div>
+              <h3>Building a Robust AI Content Detection Application</h3>
+              <a href="https://medium.com/@iritmaulana/building-a-robust-ai-content-detection-application-a-comprehensive-laravel-tutorial-1280a5872acf" 
+                 target="_blank" class="btn btn-secondary">Read More</a>
+            </div>
+          </article>
+
+          <article class="blog-card card">
+            <div class="blog-image">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*qVpnQ1cJZznBYSUnSZ_qVg.png" 
+                   alt="Content Assistant" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">AI Integration</span>
+                <time datetime="2024-12-21">Jan 29, 2025</time>
+              </div>
+              <h3>Supercharging Content Generation: Multi-LLM Integration</h3>
+              <a href="https://medium.com/@iritmaulana/supercharging-content-generation-building-a-multi-llm-integration-with-laravel-11-and-deepseek-03be04b492a9" 
+                 target="_blank" class="btn btn-secondary">Read More</a>
+            </div>
+          </article>
+
+          <article class="blog-card card">
+            <div class="blog-image">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*RX6DNdzu6Ug7biLahFiSPw.jpeg" 
+                   alt="Laravel Authentication" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Laravel</span>
+                <time datetime="2025-01-09">Jan 09, 2025</time>
+              </div>
+              <h3>Building a Robust Authentication System in Laravel</h3>
+              <a href="https://medium.com/@iritmaulana/building-a-robust-authentication-system-in-laravel-with-breeze-social-login-and-otp-71d554518ccf" 
+                 target="_blank" class="btn btn-secondary">Read More</a>
+            </div>
+          </article>
+
+          <article class="blog-card card">
+            <div class="blog-image">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*QLxd7McZ7kJyJzKP" 
+                   alt="IELTS Writing Guide" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Education</span>
+                <time datetime="2024-12-29">Dec 29, 2024</time>
+              </div>
+              <h3>Master IELTS Writing in 2025: The Ultimate Guide</h3>
+              <a href="https://medium.com/@iritmaulana/master-ielts-writing-in-2024-the-ultimate-guide-that-actually-works-7e9f5abfd4ba" 
+                 target="_blank" class="btn btn-secondary">Read More</a>
+            </div>
+          </article>
+
+          <article class="blog-card card">
+            <div class="blog-image">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*FV5ukU2FIeyjGvV2" 
+                   alt="Google Socialite Laravel" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Laravel</span>
+                <time datetime="2024-12-24">Dec 24, 2024</time>
+              </div>
+              <h3>Implementing Google Socialite in Laravel 11</h3>
+              <a href="https://medium.com/@iritmaulana/implementing-google-socialite-in-laravel-11-a-complete-guide-0c38bb37872e" 
+                 target="_blank" class="btn btn-secondary">Read More</a>
+            </div>
+          </article>
+
+          <article class="blog-card card">
+            <div class="blog-image">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LBzDWlXlnuuGr-q_jASvkg.jpeg" 
+                   alt="Xendit Payment Gateway" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Laravel</span>
+                <time datetime="2024-12-21">Dec 21, 2024</time>
+              </div>
+              <h3>Xendit Payment Gateway Integration with Laravel 11</h3>
+              <a href="https://medium.com/@iritmaulana/xendit-payment-gateway-integration-with-laravel-11-a-complete-guide-4614c9687005" 
+                 target="_blank" class="btn btn-secondary">Read More</a>
+            </div>
+          </article>
+        </div>
+      </article>
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <!-- Custom JavaScript -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

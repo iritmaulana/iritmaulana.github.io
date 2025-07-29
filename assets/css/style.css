@@ -59,20 +59,20 @@
    */
   
   /* Font Families */
-  --font-heading: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
-  --font-body: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
 
   /* Font Sizes - Fluid Typography */
-  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
-  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
-  --text-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
-  --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
-  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
-  --text-3xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);
-  --text-4xl: clamp(2.25rem, 1.9rem + 1.75vw, 3rem);
-  --text-5xl: clamp(3rem, 2.5rem + 2.5vw, 4rem);
+  --text-xs: clamp(0.65rem, 0.6rem + 0.2vw, 0.75rem);
+  --text-sm: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-base: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-lg: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-xl: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --text-2xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-3xl: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+  --text-4xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);
+  --text-5xl: clamp(2.25rem, 1.9rem + 1.75vw, 2.75rem);
 
   /* Font Weights */
   --weight-light: 300;
@@ -216,22 +216,23 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: var(--weight-semibold);
-  line-height: 1.2;
+  font-weight: var(--weight-medium);
+  line-height: 1.3;
   color: var(--text-primary);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
-h1 { font-size: var(--text-4xl); }
-h2 { font-size: var(--text-3xl); }
-h3 { font-size: var(--text-2xl); }
-h4 { font-size: var(--text-xl); }
-h5 { font-size: var(--text-lg); }
-h6 { font-size: var(--text-base); }
+h1 { font-size: var(--text-3xl); }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+h5 { font-size: var(--text-base); }
+h6 { font-size: var(--text-sm); }
 
 p {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
   color: var(--text-secondary);
+  line-height: 1.6;
 }
 
 a {
@@ -328,7 +329,7 @@ main {
   padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-lg);
   font-weight: var(--weight-medium);
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -420,8 +421,8 @@ main {
 }
 
 .profile-name {
-  font-size: var(--text-2xl);
-  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
   margin-bottom: var(--space-2);
   background: var(--gradient-accent);
   -webkit-background-clip: text;
@@ -430,7 +431,7 @@ main {
 }
 
 .profile-title {
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   color: var(--text-secondary);
   font-weight: var(--weight-normal);
   margin-bottom: var(--space-6);
@@ -474,16 +475,16 @@ main {
 }
 
 .contact-info h6 {
-  font-size: var(--text-xs);
+  font-size: 0.65rem;
   color: var(--text-tertiary);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   margin-bottom: var(--space-1);
 }
 
 .contact-info p,
 .contact-info a {
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   color: var(--text-secondary);
 }
 
@@ -554,7 +555,7 @@ main {
   border-radius: var(--radius-full);
   color: var(--text-secondary);
   font-weight: var(--weight-medium);
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   transition: all var(--duration-normal) var(--ease-out);
   border: none;
   background: none;
@@ -595,7 +596,7 @@ main {
 }
 
 .section-title {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   margin-bottom: var(--space-12);
   padding-bottom: var(--space-4);
   position: relative;
